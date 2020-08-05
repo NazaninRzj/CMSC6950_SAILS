@@ -4,7 +4,7 @@
 * [Installation](#instalation)
 * [Dependencies](#dependencies)
 
-Run ```make``` to to build the project report. 
+Run ```make``` to build the project report. 
 
 ## Installation 
 
@@ -25,7 +25,7 @@ pip install sails
 
 [SAILS](https://vcs.ynic.york.ac.uk/analysis/sails)
 
-### Data Source
+#### Data Source
 
 [Data](https://vcs.ynic.york.ac.uk/analysis/sails-example-data/-/tree/master)
 
