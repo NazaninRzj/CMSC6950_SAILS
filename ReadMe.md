@@ -4,7 +4,7 @@
 * [Installation](#instalation)
 * [Dependencies](#dependencies)
 
-Run ```bash make``` to to build the project report. 
+Run ```make``` to to build the project report. 
 
 ## Installation 
 
