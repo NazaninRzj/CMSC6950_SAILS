@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+
+\title {\textbf{Spectral Analysis In Linear Systems (SAILS)} \vspace{2 cm}}
+\author{\huge \vspace{1.5 cm} Nazanin Rezajooei \\ \vspace{1 cm} Instructor: Dr. James Munroe \vspace{3 cm}\\  Department of chemistry \\ Memorial University \\ Newfoundland and Labrador}
+\date{\vspace{1.5 cm}  August 2020}
+
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Introduction}
+\subsection{Autoregressive model}
+
+The autoregressive model is defined as a model if it predicts future values based on past values.
+As Eq.\ref{Eq:AR(1)} demonstrated,  the autoregressive model specifies that the output variable depends linearly on its previous values and stochastic terms. The order of an autoregression is the number of immediately preceding values in the series that are used to predict the value at present. So, the Eq. \ref{Eq:AR(1)} is a first-order autoregression model, written as AR(1). Eq.\ref{Eq:AR(2)} is a second-order autoregression model, written as AR(2), because the value at time $t$ is predicted from the values at times $t_1$ and $t_2$.
+
+\begin{equation}
+    y_t = \beta_0 + \beta_1 y_{t_1} + \epsilon_t
+    \label{Eq:AR(1)}
+\end{equation}
+
+\begin{equation}
+    y_t = \beta_0 + \beta_1 y_{t_1} + \beta_2 y_{t_2} + \epsilon_t
+    \label{Eq:AR(2)}
+\end{equation}
+
+\subsection{Spectral Analysis In Linear Systems (SAILS)}
+
+There are some packages, which implement multivariate regression fits including numpy.linalg and statsmodels.tsa. SAILS is extensible to work with model fits from other packages by creating a class inheriting from AbstractLinearModel and implementing the fit method to call the
+external package.
+
+\section{Results}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.8]{F_M.pdf}
+    \caption{}
+    \label{fig:F_M}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale = 0.85]{Real_Imag.pdf}
+    \caption{}
+    \label{fig:Real_Imag}
+\end{figure}
+
+%\bibliographystyle{unsrt}
+%\bibliography{ref.bib}
+\end{document}
