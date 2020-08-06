@@ -30,25 +30,24 @@ As Eq.\ref{Eq:AR(1)} demonstrated,  the autoregressive model specifies that the 
 
 \subsection{Spectral Analysis In Linear Systems (SAILS)}
 
-There are some packages, which implement multivariate regression fits including numpy.linalg and statsmodels.tsa. SAILS is extensible to work with model fits from other packages by creating a class inheriting from AbstractLinearModel and implementing the fit method to call the
-external package.
+SAILS (Spectral Analysis in Linear Systems) is a python package that provides a basis for both the straightforward fitting of AR models as well as the exploration and development of newer methods, such as the decomposition of autoregressive parameters into eigenmodes. There are some packages, which implement multivariate regression fits including numpy.linalg and statsmodels.tsa. SAILS is extensible to work with model fits from other packages by creating a class inheriting from AbstractLinearModel and implementing the fit method to call the external package \footnote{https://joss.theoj.org/papers/10.21105/joss.01982}.
 
 \section{Results}
 
+The Fig. \ref{fig:Real_Imag} demonstrates the decomposition of the parameter matrix, which consists of either complex or real number. It shows frequency increasing counterclockwise from the x-axis. Nyquist frequency is on the negative x-axis.
+
 \begin{figure}[h]
     \centering
-    \includegraphics[scale = 0.8]{F_M.pdf}
-    \caption{}
+    \includegraphics[scale = 0.6]{F_M.pdf}
+    \caption{shows the fourier and modal based on frequency}
     \label{fig:F_M}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[scale = 0.85]{Real_Imag.pdf}
-    \caption{}
+    \caption{demonstrates the imaginary vs real number}
     \label{fig:Real_Imag}
 \end{figure}
 
-%\bibliographystyle{unsrt}
-%\bibliography{ref.bib}
 \end{document}
