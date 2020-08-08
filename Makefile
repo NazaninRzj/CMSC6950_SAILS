@@ -1,16 +1,17 @@
-FIGURES= F_M.pdf Real_Imag.pdf
+FIGURES= data.pdf fourier.pdf
 
-report.pdf: report.tex $(FIGURES) sails_project.py
+report.pdf: report.tex ref.bib $(FIGURES) sails_project.py
 	latexmk -pdf
 
-F_M.pdf: sails_project.py meg_occipital_ve.hdf5
-	python3 sails_project.py
+data.pdf: data_preparation.py 911.csv
+	python3 data_preparation.py
 
-Real_Imag.pdf: sails_project.py meg_occipital_ve.hdf5
-	python3 sails_project.py
+fourier.pdf:  Fourier_transform.py 911.csv
+	python3 Fourier_transform.py
 
-meg_occipital_ve.hdf5:
-	git clone https://vcs.ynic.york.ac.uk/analysis/sails-example-data
+911.csv:
+	unzip 100_1381403_bundle_archive.zip
+	rm 100_1381403_bundle_archive.zip
 
 .PHONY: clean almost_clean
 
