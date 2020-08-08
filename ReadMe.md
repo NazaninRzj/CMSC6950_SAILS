@@ -16,13 +16,15 @@ sudo apt-get install -y latexmk
 pip install sails
 pip install matplotlib
 pip install numpy
-pip install h5py
-pip install os.path
-
 ```  
 
 ## Dependencies
 * python3
+
+## Clone the repository
+``` bash
+git clone https://github.com/NazaninRzj/CMSC6950_SAILS.git
+```
 
 #### software
 
@@ -30,5 +32,5 @@ pip install os.path
 
 #### Data Source
 
-[Data](https://vcs.ynic.york.ac.uk/analysis/sails-example-data/-/tree/master)
+[Data](https://www.kaggle.com/mchirico/montcoalert)
 
