@@ -18,11 +18,11 @@ fourier.pdf:  Fourier_transform.py 911.csv
 
 clean: almost_clean
 	rm  -f $(FIGURES)
-	rm  -f report.pdf
 	rm 911.csv
+	rm ref.bib
 
 almost_clean:
 	latexmk -c
 	rm -rf data_preparation.py
 	rm -rf Fourier_transform.py
-	rm ref.bib
+	rm  -f report.pdf
