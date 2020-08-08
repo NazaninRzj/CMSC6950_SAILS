@@ -1,6 +1,6 @@
 FIGURES= data.pdf fourier.pdf
 
-report.pdf: report.tex ref.bib $(FIGURES) sails_project.py
+report.pdf: report.tex ref.bib $(FIGURES) data_preparation.py Fourier_transform.py
 	latexmk -pdf
 
 data.pdf: data_preparation.py 911.csv
