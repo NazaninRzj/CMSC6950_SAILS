@@ -12,14 +12,17 @@ fourier.pdf:  Fourier_transform.py 911.csv
 911.csv:
 	unzip 100_1381403_bundle_archive.zip
 	rm 100_1381403_bundle_archive.zip
-	cp 911.csv ~/CMSC6950_SAILS/
+	
 
 .PHONY: clean almost_clean
 
 clean: almost_clean
 	rm  -f $(FIGURES)
 	rm  -f report.pdf
+	rm 911.csv
 
 almost_clean:
 	latexmk -c
-	rm -rf sails-example-data
+	rm -rf data_preparation.py
+	rm -rf Fourier_transform.py
+	rm ref.bib
