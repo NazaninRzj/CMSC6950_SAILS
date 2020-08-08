@@ -20,7 +20,7 @@ clean: almost_clean
 	rm  -f $(FIGURES)
 	rm 911.csv
 	rm ref.bib
-
+	rm report.bbl
 almost_clean:
 	latexmk -c
 	rm -rf data_preparation.py
