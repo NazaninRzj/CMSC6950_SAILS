@@ -12,6 +12,10 @@ fourier.pdf:  Fourier_transform.py 911.csv
 911.csv:
 	unzip 100_1381403_bundle_archive.zip
 	rm 100_1381403_bundle_archive.zip
+	cd 100_1381403_bundle_archive
+	cp 911.csv ~/CMSC6950_SAILS/
+	cd ..
+	rm -rf 100_1381403_bundle_archive
 
 .PHONY: clean almost_clean
 
